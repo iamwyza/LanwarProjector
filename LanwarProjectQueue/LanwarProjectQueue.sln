@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanwarProjectQueue", "LanwarProjectQueue\LanwarProjectQueue.csproj", "{F4CBA72E-F99D-433C-9E15-FB46D69333B0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EEC80E82-0552-4197-AA0F-3E46DB766D0A} = {EEC80E82-0552-4197-AA0F-3E46DB766D0A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanwarProjector.Common", "LanwarProjector.Common\LanwarProjector.Common.csproj", "{EEC80E82-0552-4197-AA0F-3E46DB766D0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanwarProjectorMediaIndexer", "..\LanwarProjectorMediaIndexer\LanwarProjectorMediaIndexer\LanwarProjectorMediaIndexer.csproj", "{C7816490-FCAA-4CC3-88DF-D51273B1B1B2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EEC80E82-0552-4197-AA0F-3E46DB766D0A} = {EEC80E82-0552-4197-AA0F-3E46DB766D0A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4CBA72E-F99D-433C-9E15-FB46D69333B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4CBA72E-F99D-433C-9E15-FB46D69333B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4CBA72E-F99D-433C-9E15-FB46D69333B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4CBA72E-F99D-433C-9E15-FB46D69333B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEC80E82-0552-4197-AA0F-3E46DB766D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC80E82-0552-4197-AA0F-3E46DB766D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC80E82-0552-4197-AA0F-3E46DB766D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC80E82-0552-4197-AA0F-3E46DB766D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7816490-FCAA-4CC3-88DF-D51273B1B1B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7816490-FCAA-4CC3-88DF-D51273B1B1B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7816490-FCAA-4CC3-88DF-D51273B1B1B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7816490-FCAA-4CC3-88DF-D51273B1B1B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,37 @@
+﻿body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1270px;
+}
+
+div#info {
+    width: 1270px;
+    float: left;
+    min-height: 25px;
+
+    padding: 10px;
+
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.infoStatus {
+        border: 1px solid #acacac;
+        background-color: #f0f0f0;
+}
+
+div#infoHolder {
+    padding: 0px;
+    margin: 0px;
+    min-height: 45px;
+    margin-bottom: 5px;
+}
+
+#main {
+    width: 1270px;
+}
+
+.ui-widget .ui-widget {
+    font-size: .8em;
+}
