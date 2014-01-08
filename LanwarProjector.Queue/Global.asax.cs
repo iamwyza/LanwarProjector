@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
-using LanwarProjectQueue;
+using LanwarProjector.Queue;
 using Microsoft.Owin;
 using Owin;
 using System.Configuration;
@@ -18,7 +18,7 @@ using Newtonsoft.Json;
 using Microsoft.AspNet.SignalR;
 using LanwarProjector.Common;
 
-namespace LanwarProjectQueue
+namespace LanwarProjector.Queue
 {
     public class Global : HttpApplication
     {

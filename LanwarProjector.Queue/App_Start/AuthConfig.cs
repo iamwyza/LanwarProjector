@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using Microsoft.AspNet.Membership.OpenAuth;
 
-namespace LanwarProjectQueue
+namespace LanwarProjector.Queue
 {
     internal static class AuthConfig
     {

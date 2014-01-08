@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace LanwarProjectQueue
+namespace LanwarProjector.Queue
 {
     public partial class Manager : System.Web.UI.Page
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{C7816490-FCAA-4CC3-88DF-D51273B1B1B2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LanwarProjectorMediaIndexer</RootNamespace>
-    <AssemblyName>LanwarProjectorMediaIndexer</AssemblyName>
+    <RootNamespace>LanwarProjector.MediaIndexer</RootNamespace>
+    <AssemblyName>LanwarProjector.MediaIndexer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -74,7 +74,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="LanwarProjectorMediaIndexer.exe.config">
+    <None Include="LanwarProjector.MediaIndexer.exe.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
@@ -86,7 +86,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\LanwarProjectQueue\LanwarProjector.Common\LanwarProjector.Common.csproj">
+    <ProjectReference Include="..\LanwarProjector.Common\LanwarProjector.Common.csproj">
       <Project>{eec80e82-0552-4197-aa0f-3e46db766d0a}</Project>
       <Name>LanwarProjector.Common</Name>
     </ProjectReference>
@@ -94,7 +94,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>cd $(TargetDir)..\
-xcopy Debug Z:\LanwarProjectorMediaIndexer\ /s /d /y</PostBuildEvent>
+xcopy Debug Z:\LanwarProjector.MediaIndexer\ /s /d /y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

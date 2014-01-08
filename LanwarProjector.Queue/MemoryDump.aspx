@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MemoryDump.aspx.cs" Inherits="LanwarProjectQueue.MemoryDump" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MemoryDump.aspx.cs" Inherits="LanwarProjector.Queue.MemoryDump" %>
 
 <!DOCTYPE html>
 

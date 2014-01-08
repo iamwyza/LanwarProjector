@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LanwarProjectQueue {
+namespace LanwarProjector.Queue {
     
     
     public partial class MemoryDump {

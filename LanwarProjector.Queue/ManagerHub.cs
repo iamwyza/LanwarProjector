@@ -12,7 +12,7 @@ using LanwarProjector.Common.DTO;
 using LanwarProjector.Common.Utilities;
 using LanwarProjector.Common.Domain;
 
-namespace LanwarProjectQueue
+namespace LanwarProjector.Queue
 {
     public class ManagerHub : Hub
     {

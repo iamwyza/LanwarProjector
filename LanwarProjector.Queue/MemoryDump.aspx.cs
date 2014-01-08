@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.Xml.Serialization;
 using System.IO;
 
-namespace LanwarProjectQueue
+namespace LanwarProjector.Queue
 {
     public partial class MemoryDump : System.Web.UI.Page
     {

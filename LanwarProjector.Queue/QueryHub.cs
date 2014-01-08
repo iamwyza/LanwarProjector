@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Microsoft.AspNet.SignalR;
-using LanwarProjectQueue;
+using LanwarProjector.Queue;
 using System.Net;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -15,7 +15,7 @@ using log4net;
 using LanwarProjector.Common;
 using LanwarProjector.Common.DTO;
 
-namespace LanwarProjectQueue
+namespace LanwarProjector.Queue
 {
     public class QueryHub : Hub
     {

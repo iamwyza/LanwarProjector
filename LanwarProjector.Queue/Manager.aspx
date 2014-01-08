@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Manager.aspx.cs" Inherits="LanwarProjectQueue.Manager" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Manager.aspx.cs" Inherits="LanwarProjector.Queue.Manager" %>
 
 <!DOCTYPE html>
 

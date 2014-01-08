@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LanwarProjectQueue</RootNamespace>
-    <AssemblyName>LanwarProjectQueue</AssemblyName>
+    <RootNamespace>LanwarProjector.Queue</RootNamespace>
+    <AssemblyName>LanwarProjector.Queue</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -350,13 +350,15 @@ IF EXIST *.ascx copy *.ascx "Z:\LanwarProjector\"
 IF EXIST *.aspx copy *.aspx "Z:\LanwarProjector\"
 IF EXIST *.asmx copy *.asmx "Z:\LanwarProjector\"
 IF EXIST *.ashx copy *.ashx "Z:\LanwarProjector\"
+IF EXIST *.asax copy *.ashx "Z:\LanwarProjector\"
+
 
 copy "Scripts\common.js" "Z:\LanwarProjector\Scripts\common.js"
 copy "Content\common.css" "Z:\LanwarProjector\Content\common.css"
 
 cd $(TargetDir)\
-copy LanwarProjectQueue.dll "Z:\LanwarProjector\bin\"
-copy LanwarProjectQueue.pdb "Z:\LanwarProjector\bin\"
+copy LanwarProjector.Queue.dll "Z:\LanwarProjector\bin\"
+copy LanwarProjector.Queue.pdb "Z:\LanwarProjector\bin\"
 
 cd $(SolutionDir)\LanwarProjector.Common\bin\Debug\
 copy LanwarProjector.Common.dll "Z:\LanwarProjector\bin\"

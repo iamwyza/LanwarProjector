@@ -31,19 +31,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoMapper">
-      <HintPath>..\LanwarProjectQueue\bin\AutoMapper.dll</HintPath>
+      <HintPath>..\LanwarProjector.Queue\bin\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="AutoMapper.Net4">
-      <HintPath>..\LanwarProjectQueue\bin\AutoMapper.Net4.dll</HintPath>
+      <HintPath>..\LanwarProjector.Queue\bin\AutoMapper.Net4.dll</HintPath>
     </Reference>
     <Reference Include="BouncyCastle.Crypto">
-      <HintPath>..\LanwarProjectQueue\bin\BouncyCastle.Crypto.dll</HintPath>
+      <HintPath>..\LanwarProjector.Queue\bin\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>..\LanwarProjectQueue\bin\log4net.dll</HintPath>
+      <HintPath>..\LanwarProjector.Queue\bin\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\LanwarProjectQueue\bin\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\LanwarProjector.Queue\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\NHibernate.dll</HintPath>
