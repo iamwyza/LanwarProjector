@@ -9,6 +9,6 @@ namespace LanwarProjector.Common
 {
     public static class Global
     {
-        public static byte[] EncryptionKey = ConfigurationManager.AppSettings["EncyrptionKey"].Split(',').Cast<Byte>().ToArray();
+        public static byte[] EncryptionKey = ConfigurationManager.AppSettings["EncryptionKey"].Split(',').Select(x => Convert.ToByte(x)).ToArray();
     }
 }
