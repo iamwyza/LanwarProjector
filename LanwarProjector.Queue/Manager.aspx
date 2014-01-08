@@ -38,7 +38,6 @@
             };
 
             connman.client.setup = function (Config) {
-                console.log(Config);
                 $.each(Config.Videos, function (i, video) {
                     addVideo(video);
                 });
@@ -65,7 +64,9 @@
             };
 
             connman.client.storageUpdate = function (connInfo) {
-                console.log(connInfo);
+                var row = tblStorage.fnGetPosition($('#' + connInfo.Id).get(0));
+                tblStorage.fnUpdate(connInfo, row);
+                $('#' + connInfo.Id).effect('highlight');
             };
 
             conn.client.status = statusUpdate;
@@ -131,7 +132,7 @@
                         statusUpdate("Password Must Not Be Blank", 5, "error");
                         return;
                     }
-                    connman.server.addStorage($("#addStorageNetworkPath").val().trim(), $("#addStorageUsername").val().trim(), $("#addStoragePassword").val().trim(), $("#addStorageName").val().trim());
+                    connman.server.addStorage($("#addStorageNetworkPath").val().trim(), $("#addStorageUsername").val().trim(), $("#addStoragePassword").val().trim(), $("#addStorageName").val().trim(), $('#addStorageWritable').prop('checked'));
                 });
 
                 connman.server.setup();
@@ -183,14 +184,7 @@
             }
 
             function addStorage(connInfo) {
-                console.log(connInfo);
-                $('#tblStorage tbody')
-                    .append($('<tr></tr>').attr('id', connInfo)
-                        .append($('<td></td>').html(connInfo.Name))
-                        .append($('<td></td>').html(connInfo.Path))
-                        .append($('<td></td>').html(connInfo.Username))
-                        .append($('<td></td>').html(connInfo.Status + "(" + $.format.date(connInfo.Statustime, "ddd hh:mm a") + ")"))
-                        .append($('<td></td>').html("")));
+                tblStorage.fnAddData(connInfo);
             }
 
 
@@ -293,6 +287,35 @@
             var tblQueued = $('#tblQueued').dataTable({
                 bJQueryUI: true,
                 "iDisplayLength": 50
+            });
+
+            var tblStorage = $('#tblStorage').dataTable({
+                bJQueryUI: true,
+                "aoColumns": [
+                    {
+                        "mData": "Name"
+                    },
+                    {
+                        "mData": "Path"
+                    },
+                    {
+                        "mData": "Username"
+                    },
+                    {
+                        "mData": function (source, type, val) {
+                            return source.Status + "(" + $.format.date(source.Statustime, "ddd hh:mm a") + ")"
+                        }
+                    },
+                    {
+                        "mData": function (source, type, val) {
+                            return "";
+                        }
+                    }
+                ],
+                "fnRowCallback": function (nRow, aData, iDisplayIndex, iDisplayIndexFull) {
+
+                    $(nRow).attr('id', aData.Id);
+                }
             });
 
             function getQueueOptions() {
@@ -468,6 +491,8 @@
                     <input type="text" size="10" id="addStorageUsername" />
                     Password:
                     <input type="password" id="addStoragePassword" />
+                    <label for="addStorageWritable" title="Can this storage be used to store files downloaded from youtube and queued up.">Writeable:</label>
+                    <input type="checkbox" id="addStorageWritable" />
                     <button id="addStorageButton"></button>
                     <br />
                     <h4>Existing Connections</h4>
