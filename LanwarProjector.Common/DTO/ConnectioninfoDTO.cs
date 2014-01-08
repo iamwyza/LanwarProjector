@@ -19,6 +19,6 @@ namespace LanwarProjector.Common.DTO
         public DateTime? Statustime { get; set; }
         [JsonIgnore]
         public IList<MediaindexDTO> Mediaindex { get; set; }
-        public bool Queable { get; set; }
+        public bool Queueable { get; set; }
     }
 }

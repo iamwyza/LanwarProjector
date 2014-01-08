@@ -18,6 +18,6 @@ namespace LanwarProjector.Common.Domain {
         public virtual string Username { get; set; }
         public virtual DateTime? Statustime { get; set; }
         public virtual IList<MediaIndex> MediaIndex { get; set; }
-        public virtual bool Queable { get; set; }
+        public virtual bool Queueable { get; set; }
     }
 }
