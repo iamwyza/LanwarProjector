@@ -67,7 +67,7 @@ namespace LanwarProjectorMediaIndexer
                     }
                 }).Wait();
 
-                managerHub.Invoke("SendManagerMessage", "Indexer Connected!", "status", 10).Wait();
+                managerHub.Invoke("SendManagerMessage", "Indexer Connected!", "status", 5).Wait();
 
                 log.Debug("Setup & Testing Complete");
 
@@ -141,7 +141,7 @@ namespace LanwarProjectorMediaIndexer
                         }
                     }
                 }
-                managerHub.Invoke("SendManagerMessage", "Indexer: Indexing run complete.", "status",  10).Wait();
+                managerHub.Invoke("SendManagerMessage", "Indexer: Indexing run complete.", "status",  5).Wait();
                 log.Debug("Indexing Tasks Complete");
 
             }
